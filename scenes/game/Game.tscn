@@ -1,0 +1,30 @@
+[gd_scene load_steps=8 format=3 uid="uid://qvud8e5rbfye"]
+
+[ext_resource type="Texture2D" uid="uid://c7dt2n7bt4ryf" path="res://assets/GameBg.png" id="1_6p83w"]
+[ext_resource type="PackedScene" uid="uid://bpufjcx16leip" path="res://managers/game_manager/game_manager.tscn" id="1_w0doh"]
+[ext_resource type="PackedScene" uid="uid://bk2h2lj6cobeu" path="res://scenes/paddle/Paddle.tscn" id="2_audg2"]
+[ext_resource type="PackedScene" uid="uid://bk3k1ab8hxdj2" path="res://managers/spawner_manager/spawner_manager.tscn" id="2_w2es2"]
+[ext_resource type="PackedScene" uid="uid://d223i66jwpn05" path="res://scenes/gem/Gem.tscn" id="3_c8rmf"]
+[ext_resource type="PackedScene" uid="uid://cwfb4lmlotrdc" path="res://scenes/timer/Timer.tscn" id="4_1q4sg"]
+[ext_resource type="PackedScene" uid="uid://hyufbyi6ecv0" path="res://scenes/score_label/score_label.tscn" id="7_60gnl"]
+
+[node name="Game" type="Node"]
+
+[node name="GameManager" parent="." instance=ExtResource("1_w0doh")]
+
+[node name="SpawnerManager" parent="." instance=ExtResource("2_w2es2")]
+gem_packed = ExtResource("3_c8rmf")
+
+[node name="Timer" parent="." instance=ExtResource("4_1q4sg")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(597, 329)
+scale = Vector2(-0.7, -0.7)
+texture = ExtResource("1_6p83w")
+
+[node name="Paddle" parent="." instance=ExtResource("2_audg2")]
+position = Vector2(578, 597)
+
+[node name="ScoreLabel" parent="." instance=ExtResource("7_60gnl")]
+offset_right = 0.0
+offset_bottom = 0.0

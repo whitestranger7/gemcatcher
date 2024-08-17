@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://hyufbyi6ecv0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2mmwu"]
+font_size = 40
+font_color = Color(0.224139, 0.547752, 0.432759, 1)
+
+[node name="ScoreLabel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -50.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 139.0
+offset_bottom = 80.0
+label_settings = SubResource("LabelSettings_2mmwu")

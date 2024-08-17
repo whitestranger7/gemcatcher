@@ -1,0 +1,34 @@
+# Ignore the .import/ folder where Godot stores imported assets
+.import/
+
+# Ignore the .godot/ folder (used in older versions of Godot)
+.godot/
+
+# Ignore export templates
+export_templates/
+/android/
+
+# Ignore Godot-specific binary files
+*.import
+*.godot
+*.mono
+
+# Ignore personal settings
+*.cfg
+.mono/
+.mono/*
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and crash reports
+crash_reports/
+logs/
+
+# Ignore compiled scripts
+*.pck
+*.exe
+*.dll
+*.so
+*.dylib
